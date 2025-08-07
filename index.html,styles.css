@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Box Model Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the Box Model Showcase</h1>
+    <p>This page demonstrates structured HTML and styled layout using CSS.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Section One</h2>
+      <p>This section uses padding, margin, and border to illustrate the box model.</p>
+    </section>
+
+    <section class="card">
+      <h2>Section Two</h2>
+      <ul>
+        <li>Consistent spacing</li>
+        <li>Clear layout</li>
+        <li>Responsive design</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Section Three</h2>
+      <p>Resize the window to see how the layout adapts.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Box Model Demo</p>
+  </footer>
+
+</body>
+
+
+
+
+
+Style.css
+/* Reset default spacing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Main content layout */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Card-style sections */
+.card {
+  background-color: white;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 10px 0;
+  width: calc(33.333% - 20px);
+  border-radius: 6px;
+}
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+/* Footer styling */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #555;
+}
+
+
+
+
+</html>
